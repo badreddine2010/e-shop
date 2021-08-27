@@ -13,9 +13,8 @@ if(!internauteEstConnecteEtEstAdmin())
 ?>
 
 
-	   <!-- For demo purpose -->
-	   <div class="row mb-4">
-		   <div class="col-lg-12 mx-auto text-center"><?php
+<div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center"><?php
 	echo '<h1> Voici les commandes passées sur le site </h1>';
 	echo '<table border="1"><tr>';
 	
@@ -54,9 +53,8 @@ if(!internauteEstConnecteEtEstAdmin())
 	{	
 		?>
 		
-			   <!-- For demo purpose -->
-			   <div class="row mb-4">
-				   <div class="col-lg-12 mx-auto text-center"><?php
+		<div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center"><?php
 		echo '<h1> Voici le détails pour une commande :</h1>';
 		echo '<table table table-bordered>';
 		echo '<tr>';

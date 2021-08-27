@@ -16,7 +16,7 @@ header  nav{ background:rgb(241, 236, 236); }
 /**************************************************** MILIEU ************************************************/
 #carouselExampleInterval{margin: 0 auto; width: 1000px; height: 300px;}
 /**************************************************** BAS ************************************************/
-footer{ background: #007bff;color: white; text-align: center; }
+footer{ background: rgb(241, 236, 236);color: #007bff; text-align: center; }
 /**************************************************** GENERAL ************************************************/
 .erreur{ background:orange; padding: 5px; margin: 5px; }
 .validation{ background: #9e759e; padding: 5px; margin: 5px; }

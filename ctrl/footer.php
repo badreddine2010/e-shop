@@ -28,7 +28,7 @@
    <div align="center" style="color:#656565;text-align:justify; font-weight:bold; ">
 <footer>
 			<div >
-            <h5 style="color:white;text-align: center;">Contactez-nous</h5>
+            <h5 >Contactez-nous</h5>
 				<ul>
                 
 				<a href="https://facebook.com" class="fa" _blank><img src="<?=RACINE_SITE?>ctrl/img/fa.png"></a></li>
@@ -36,7 +36,7 @@
 				<a href="https://youtube.com" class="fa"><img src="<?=RACINE_SITE?>ctrl/img/you.png"></a></li>
 				<a href="https://gmail.com" class="fa"><img src="<?=RACINE_SITE?>ctrl/img/gm.png"></a></li>
 				</ul>
-                <p style="color:white;text-align: center;">
+                <p >
 				
 				Email:&nbsp; e_shop@gmail.com&nbsp;&nbsp;&nbsp;&nbsp; Phone:&nbsp;+33010203040506
 

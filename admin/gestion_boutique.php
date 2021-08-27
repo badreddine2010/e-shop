@@ -54,7 +54,8 @@ if(!empty($_POST))
 if(isset($_GET['action']) && $_GET['action'] == "affichage")
 {
 	$resultat = executeRequete("SELECT * FROM produit");
-	
+	?><div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center"><?php
 	echo '<h2> Affichage des produits </h2>';
 
 	//echo 'Nombre de produit(s) dans la boutique : ' . $resultat->num_rows;
@@ -97,9 +98,8 @@ if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == '
 		$produit_actuel = $resultat->fetch_assoc();
 	}?>
 
-	<!-- For demo purpose -->
-	<div class="row mb-4">
-		<div class="col-lg-8 mx-auto text-center"><?php
+<div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center"><?php
 	echo '
 
 	<h2> Formulaire Produit </h2>

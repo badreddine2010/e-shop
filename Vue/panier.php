@@ -33,9 +33,8 @@ if(isset($_GET['action']) && $_GET['action'] == "vider")
 //--------------------------------- AFFICHAGE HTML ---------------------------------//
 ?>
  
-        <!-- For demo purpose -->
-        <div class="row mb-4">
-            <div class="col-lg-12 mx-auto text-center"><?php
+ <div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center"><?php
 //echo 'Panier';
 echo '<h2> Votre panier </h2>';
 echo "<table class='table table-bordered'>";
