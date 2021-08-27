@@ -14,7 +14,7 @@ header  nav{ background:rgb(241, 236, 236); }
 #barre-e_shop .dropdown-menu a.dropdown-item.btn.btn-primary {text-align: center;margin: 0.5rem;margin: 0.5rem;margin-right: 0.5rem;margin-left: 0.5rem;width: 90%;margin-left: auto;margin-right: auto;border-color: #1b263b;}
 
 /**************************************************** MILIEU ************************************************/
-#carouselExampleInterval{margin: 0 auto; width: 1000px; height: 300px;}
+#carouselExampleInterval{margin: 0 auto; width: 1900px; height: 300px;}
 /**************************************************** BAS ************************************************/
 footer{ background: rgb(241, 236, 236);color: #007bff; text-align: center; }
 /**************************************************** GENERAL ************************************************/

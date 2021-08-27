@@ -31,13 +31,13 @@ echo'<div class="boutique-droite">';
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="photo\1.jpg" class="d-block w-70 " alt="..." width="1000" height="300">
+      <img src="photo\1.jpg" class="d-block w-70 " alt="..." width="1900" height="300">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="photo\2.jpg" class="d-block w-70" alt="..." width="1000" height="300">
+      <img src="photo\2.jpg" class="d-block w-70" alt="..." width="1900" height="300">
     </div>
     <div class="carousel-item">
-      <img src="photo\3.jpg" class="d-block w-70" alt="..." width="1000" height="300">
+      <img src="photo\3.jpg" class="d-block w-70" alt="..." width="1900" height="300">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
