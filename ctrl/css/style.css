@@ -1,0 +1,45 @@
+/**************************************************** GENERAL ************************************************/
+.container{background-color: #1bac35;margin:0 auto;width: auto;}
+/**************************************************** HAUT ************************************************/
+title{background-color:white;}
+#header{ padding-top: 0rem;color: rgb(184, 68, 68); }
+header span{ text-emphasis-color: #fff; color: #9b98a5;text-align: center;}
+header  nav{ background:rgb(241, 236, 236); }
+.navbar {border-radius: .3rem;-webkit-border-radius: .3rem;-moz-border-radius: .3rem;-ms-border-radius: .3rem;-o-border-radius: .3rem;color: #fff; }
+#barre-e_shop .logo {border-radius: .25rem;-webkit-border-radius: .25rem;-moz-border-radius: .25rem;-ms-border-radius: .25rem;-o-border-radius: .25rem;}
+#barre-e_shop li a.dropdown-toggle::after {content: none;}
+#barre-e_shop li a.dropdown-toggle #check {position: absolute;top: 30px;left: 35px;}
+#barre-e_shop .btn-outline-mu {color: #6D81A8;border-color: #6D81A8;}
+#barre-e_shop .btn-outline-mu:hover {background-color: #0d1b2a;border-color: #0d1b2a;color: #E0E1DD;}
+#barre-e_shop .dropdown-menu a.dropdown-item.btn.btn-primary {text-align: center;margin: 0.5rem;margin: 0.5rem;margin-right: 0.5rem;margin-left: 0.5rem;width: 90%;margin-left: auto;margin-right: auto;border-color: #1b263b;}
+
+/**************************************************** MILIEU ************************************************/
+#carouselExampleInterval{margin: 0 auto; width: 1000px; height: 300px;}
+/**************************************************** BAS ************************************************/
+footer{ background: #007bff;color: white; text-align: center; }
+/**************************************************** GENERAL ************************************************/
+.erreur{ background:orange; padding: 5px; margin: 5px; }
+.validation{ background: #9e759e; padding: 5px; margin: 5px; }
+.cadre{ border: 1px solid #0f0f0f; width: 30%;}
+.cadre  h2{ background: #007bff; margin: 0; text-align: center; font-size: 15px; padding: 5px; }
+.cadre  p{ padding: 10px; }
+.centre{text-align: center;}
+/**************************************************** BOUTIQUE ************************************************/
+.boutique-gauche{ float: left; width: 10%; background: #ca3232;min-height: 665px;   text-align: center; }
+ul{ list-style: none; padding: 0; }
+ul  li  a{ display: block; padding: 20px;color: #007bff; }
+ul  li  a:hover{ background: #007bff; color: #fff; }
+.boutique-produit:hover{ background: #c0c0c0; }
+/**************************************************** DIVERS ************************************************/
+table{ border-collapse: collapse; }
+table tr td th{text-align: center;}
+td, th{ padding: 5px; }
+/**************************************************** FORMULAIRE ************************************************/
+h2 {background:#007bff; color: white;font-weight: 300;padding: 15px 25px;line-height: 30px;font-size: 25px;text-align: center;}
+a {color: #0f0f0f;}
+.box {text-align-last: center ;border: 1px solid #111111;padding: 30px 25px 10px 25px; background: white;margin: 30px;margin-left: auto;margin-right: auto;width: 60%;;border-radius: 0.3rem;-webkit-border-radius: 0.3rem;-moz-border-radius: 0.3rem;-ms-border-radius: 0.3rem;-o-border-radius: 0.3rem;}
+.body-mu {min-height: 100vh;padding-right: 15px;padding-left: 15px;}
+header { text-align: center; color: #6b4a72;}
+.btn.btn-primary,.btn-primary {background-color: #007bff;border-color: #6b4a72;color: #fff;}
+#paiement .nav-pills .show>.nav-link{background-color:#6D81A8 ;border: 1px solid #c4c4c4;color: white;}
+#paiement .nav-pills a.nav-link {color:#0d1b2a ;border: 1px solid #c4c4c4;}
