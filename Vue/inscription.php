@@ -72,7 +72,7 @@ if(isset($_REQUEST['mdp'], $_REQUEST['nom'], $_REQUEST['prenom'], $_REQUEST['ema
     
                  
     <label for="ville">Ville</label><br>
-    <input type="text" class="form-control" required id="ville" name="ville" placeholder="votre ville" pattern="[a-zA-Z0-9-_.]{5,15}" title="caractères acceptés : a-zA-Z0-9-_."><br>
+    <input type="text" class="form-control" required id="ville" name="ville" placeholder="votre ville" title="caractères acceptés : a-zA-Z0-9-_."><br>
          
     <label for="cp">Code Postal</label><br>
     <input type="text" class="form-control" required id="code_postal" name="code_postal" placeholder="code postal" pattern="[0-9]{5}" title="5 chiffres requis : 0-9"><br>
