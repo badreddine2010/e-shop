@@ -10,7 +10,7 @@ echo '<div class="container">';
 
 while($cat = $categories_des_produits->fetch_assoc())
 {
-	echo"<a href='" . RACINE_SITE . "/vue/vitrine.php?categorie="	. $cat['categorie'] . "'>" . $cat['categorie'] . "</a>";
+	echo"<a class='link-dark' href='" . RACINE_SITE . "/vue/vitrine.php?categorie="	. $cat['categorie'] . "'>" . $cat['categorie'] . "</a>";
 }
 
 echo"</nav>";

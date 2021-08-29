@@ -8,21 +8,14 @@
 		   <param name="quality" value="high" />
 		   <embed src="flash/buplicite.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="624" height="194"></embed>
 		   </object>
-		   </noscript>
-	 </p>
-   </div>
-   <div class="hhhhh">
-	 <p>&nbsp;</p>
-   </div>
-   <p><div id="Carreau">
+		   </noscript><br>
    <div class="haut"><marquee>
-			<h4 class="Style6 Style22" style="color:#007bff"><strong><em><font face="arial,helvetica, sans-serif"> Bienvenue 
-			  Sur Notre Site . chez nous vous trouverez les meilleurs prix, top des ventes ......profitez et contacter nous merci</font></em>
+			<h4 class="Style6 Style22" style="color:#007bff"><strong><em><font face="arial,helvetica, sans-serif"> Bienvenue sur notre Site     <?php echo "<img src='http://localhost/e-shop/ctrl/img/logo2.png' width='102' height='52' />";
+ ?> </font></em>
 			</strong></h4>
 		  </marquee>
    <div class="gauche"></div>
    <div class="droit"></div>
-  
  </div>
  <div class="moy">
    <div align="center" style="color:#656565;text-align:justify; font-weight:bold; ">

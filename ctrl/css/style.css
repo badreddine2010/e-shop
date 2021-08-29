@@ -2,9 +2,8 @@
 .container{background-color: #d1e7dd;margin:0 auto;width: auto;}
 a{text-decoration: none;}
 /**************************************************** HAUT ************************************************/
-title{background-color:white;}
 #header{ padding-top: 0rem;color: rgb(184, 68, 68); }
-header span{ text-emphasis-color: #fff; color: #9b98a5;text-align: center;}
+header span{ text-emphasis-color: rgb(153, 21, 21); color: #431cc4;text-align: center;}
 header  nav{ background:rgb(241, 236, 236); }
 .navbar {border-radius: .3rem;-webkit-border-radius: .3rem;-moz-border-radius: .3rem;-ms-border-radius: .3rem;-o-border-radius: .3rem;color: #fff; }
 #barre-e_shop .logo {border-radius: .25rem;-webkit-border-radius: .25rem;-moz-border-radius: .25rem;-ms-border-radius: .25rem;-o-border-radius: .25rem;}

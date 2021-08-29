@@ -41,7 +41,7 @@ if(!empty($_POST))
 		$_POST[$indice] = htmlEntities(addSlashes($valeur));
 	}
 	executeRequete("REPLACE INTO produit (id_produit, reference, categorie, titre, description, couleur, taille, public, photo, prix, stock) values ('$_POST[id_produit]', '$_POST[reference]', '$_POST[categorie]', '$_POST[titre]', '$_POST[description]', '$_POST[couleur]', '$_POST[taille]', '$_POST[public]',  '$photo_bdd',  '$_POST[prix]',  '$_POST[stock]')");
-	echo '<div class="validation">Le produit a été enregistré avec succès!!!</div>';
+	echo '<div class="alert alert-success">Le produit a été enregistré avec succès!!!</div>';
 	$_GET['action'] = 'affichage';
 }
 //--- LIENS PRODUITS ---//
