@@ -51,9 +51,8 @@ if(!empty($_POST))
 if(isset($_GET['action']) && $_GET['action'] == "affichage")
 {
 	$resultat = executeRequete("SELECT * FROM produit");
-	?><div class="row mb-4">
-            <div class="col-lg-8 mx-auto text-center"><?php
-	echo '<h2> Affichage des produits </h2>';
+
+	echo '<h2> Tous nos  Produits </h2>';
 
 	//echo 'Nombre de produit(s) dans la boutique : ' . $resultat->num_rows;
 	echo '<table class="table table-bordered"><tr>';

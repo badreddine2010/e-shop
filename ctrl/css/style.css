@@ -1,5 +1,6 @@
 /**************************************************** GENERAL ************************************************/
-.container{background-color: #1bac35;margin:0 auto;width: auto;}
+.container{background-color: #d1e7dd;margin:0 auto;width: auto;}
+a{text-decoration: none;}
 /**************************************************** HAUT ************************************************/
 title{background-color:white;}
 #header{ padding-top: 0rem;color: rgb(184, 68, 68); }
@@ -16,7 +17,7 @@ header  nav{ background:rgb(241, 236, 236); }
 /**************************************************** MILIEU ************************************************/
 #carouselExampleInterval{margin: 0 auto; width: 1900px; height: 300px;}
 /**************************************************** BAS ************************************************/
-footer{ background: rgb(241, 236, 236);color: #007bff; text-align: center; }
+footer{ background: #d1e7dd;color: #007bff; text-align: center; }
 /**************************************************** GENERAL ************************************************/
 .erreur{ background:orange; padding: 5px; margin: 5px; }
 .validation{ background: #9e759e; padding: 5px; margin: 5px; }

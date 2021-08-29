@@ -5,12 +5,12 @@ require_once("ctrl/header.php");
 //--- AFFICHAGE DES CATEGORIES ---//
 $categories_des_produits = executeRequete("SELECT DISTINCT categorie FROM produit");
 echo '<div id="header">';
-echo'<nav id="barre-e_shop" class="navbar navbar-expand-lg navbar-light bg-color-bzb">';
-echo '<div class="container-fluid">';
+echo'<nav class="navbar navbar-expand-lg navbar-light bg-light">';
+echo '<div class="container">';
 
 while($cat = $categories_des_produits->fetch_assoc())
 {
-	echo"<a href='?categorie="	. $cat['categorie'] . "'>" . $cat['categorie'] . "</a>";
+	echo"<a href='" . RACINE_SITE . "/vue/vitrine.php?categorie="	. $cat['categorie'] . "'>" . $cat['categorie'] . "</a>";
 }
 
 echo"</nav>";
