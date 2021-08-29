@@ -12,83 +12,69 @@
     
 		<title>E_shop.com</title>
 		</head>
-	
-		<header class="container-fluid">
-	<div id="header" class="container-fluid">
-		<nav id="barre-e_shop" class="navbar">
-
-
-				<a class="navbar-brand" href="<?php echo RACINE_SITE; ?>index.php"><p><img src='<?=RACINE_SITE?>ctrl/img/logo.jpeg' width="50" height="40" /></p>
-					<?php
-					if(internauteEstConnecteEtEstAdmin()) // admin
-					{ // BackOffice
-						?><span class="navbar-brand mb-0 h1"><?php
-						echo '<b><a  class="nav-link"  href="' . RACINE_SITE . 'admin/gestion_membre.php">Membres</a></b>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						//echo '<a  class="nav-link" href="' . RACINE_SITE . 'admin/gestion_boutique.php">Gestion de la boutique</a>';
-						echo '<a  class="nav-link" href="' . RACINE_SITE . 'admin/gestion_boutique.php?action=affichage">Produits</a>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						echo '<a  class="nav-link" href="' . RACINE_SITE . 'admin/gestion_boutique.php?action=ajout">Ajout produit</a>';?></span><?php		
-
-					}
-					if(internauteEstConnecte()) // membre et admin
-					{?><span class="navbar-brand mb-0 h1"><?php
-						echo '<b><a class="nav-link" href="' . RACINE_SITE . 'vue/membres.php">Modifier profil</a></b>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						echo '<a class="nav-link" href="'.RACINE_SITE.'" >Accès boutique</a>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						echo '<a class="nav-link" href="' . RACINE_SITE . 'vue/panier.php">Panier</a>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						echo '<a class="nav-link" href="' . RACINE_SITE . 'vue/gestion_commande.php">Commandes</a>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						echo '<a class="nav-link" href="' . RACINE_SITE . 'vue/connexion.php?action=deconnexion">Logout</a>';?></span><?php
-						
-					}
-					else // visiteur
-					{?><span class="navbar-brand mb-0 h1"><span class="navbar-brand mb-0 h1"><?php
-						echo '<b><a class="nav-link" href="' . RACINE_SITE . '" >Accueil</a></b>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						echo '<a class="nav-link" href="' . RACINE_SITE . 'vue/inscription.php">Inscription</a>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						echo '<a class="nav-link" href="' . RACINE_SITE . 'vue/panier.php">Voir votre panier</a>';?></span><?php
-						?><span class="navbar-brand mb-0 h1"><?php
-
-						//echo '<a class="nav-link" href="' . RACINE_SITE . '" >Accès à la boutique</a>';
-						echo '<a class="nav-link" href="' . RACINE_SITE . 'vue/connexion.php">Login</a>';?></span><?php
-
-						
-					}
-					// visiteur=4 liens - membre=4 liens - admin=7 liens
-					?>
-					</form>
 			
-				
-				<center>
-				
-				<div id="search">
-					<form  class="d-flex" action="<?=RACINE_SITE?>vue/recherche.php" method="GET">
-					
-						<input class="form-control me-2" name="searcharea" type="search" placeholder="Search" aria-label="Search">
-				
-						<button class="btn btn-outline-mu my-2 my-sm-0" type="submit" name="search"><img src='<?=RACINE_SITE?>ctrl/img/search.png'></button>
-					</form>
-				</div>
-				</nav>
-				</center>
-				
-			</div>
-	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">      <img src="<?php echo RACINE_SITE; ?>ctrl/img/logo.jpeg" class="d-block w-70 " alt="..." width="32" height="30">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="<?php echo RACINE_SITE; ?>">Home</a>
+        </li>
+		<?php if(internauteEstConnecteEtEstAdmin()) {?>
 
-	</header>
-	<body class="">
-		<div class="container-fluid">
+      <li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>admin/gestion_boutique.php?action=affichage" >Produits</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href='<?php echo RACINE_SITE; ?>admin/gestion_membre.php'>Membres</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>admin/gestion_boutique.php?action=ajout">Ajout Produit</a>
+        </li>
 
+       					<?php } if(internauteEstConnecte()) {?>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/membres.php">Profil</a>
+        </li>
+		
+		<li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/panier.php">Panier</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/gestion_commande.php">Commandes</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/connexion.php?action=deconnexion">Logout</a>
+        </li>
+      </ul>
+
+        <?php } else { ?>
+		<li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/inscription.php">Inscription</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/panier.php"><i class="bi bi-cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg></i>PANIER</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/connexion.php"><i class="bi bi-person"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+</svg></i>SE CONNECTER</a>
+        </li>
+      </ul>
+      <?php } ?>
+	  
+      <form action="<?=RACINE_SITE?>vue/recherche.php" method="GET" class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 		

@@ -134,17 +134,17 @@ CREATE TABLE IF NOT EXISTS `produit` (
 --
 
 INSERT INTO `produit` (`id_produit`, `reference`, `categorie`, `titre`, `description`, `couleur`, `taille`, `public`, `photo`, `prix`, `stock`) VALUES
-(1, '11-d-23', 'tshirt', 'Tshirt Col V bleu pétrole', 'Tee-shirt en coton flammé liseré contrastant', 'bleu', 'M', 'm', 'http://localhost:8080/e_shop/photo/bleu.jpg', 20, 53),
-(2, '66-f-15', 'tshirt', 'Tshirt Col V rouge', 'c''est vraiment un super tshirt en soir&eacute;e !', 'rouge', 'L', 'm','http://localhost:8080/e_shop/photo/66-f-15_rouge.png', 15, 230),
-(3, '88-g-77', 'tshirt', 'Tshirt Col rond vert', 'Il vous faut ce tshirt Made In France !!!', 'vert', 'L', 'm', 'http://localhost:8080/e_shop/photo/88-g-77_vert.png', 29, 63),
-(4, '55-b-38', 'tshirt', 'Tshirt jaune électrique', 'le jaune reviens &agrave; la mode, non? :-)', 'jaune', 'S', 'm', 'http://localhost:8080/e_shop/photo/55-b-38_jaune.png', 20, 3),
-(5, '31-p-33', 'tshirt', 'Tshirt noir original', 'voici un tshirt noir tr&egrave;s original :p', 'noir', 'XL', 'm', 'http://localhost:8080/e_shop/photo/31-p-33_noir.jpg', 25, 80),
-(6, '56-a-65', 'tshirt', 'Chemise Blanche', 'Les chemises c''est bien mieux que les tshirts', 'blanc', 'L', 'm', 'http://localhost:8080/e_shop/photo/56-a-65_chemiseblanchem.jpg', 49, 73),
-(7, '63-s-63', 'tshirt', 'Chemise Noir', 'Comme vous pouvez le voir c''est une chemise noir...', 'noir', 'M', 'm', 'http://localhost:8080/e_shop/photo/63-s-63_chemisenoirm.jpg', 59, 120),
-(8, '77-p-79', 'tshirt', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'http://localhost:8080/e_shop/photo/77-p-79_pullgrism2.jpg', 79, 99),
-(9, '77-l-79', 'tshirt', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'http://localhost:8080/e_shop/photo/77-p-79_pullgrism2.jpg', 79, 99),
-(10, '56-a-67', 'tshirt', 'Chemise Blanche', 'Les chemises c''est bien mieux que les tshirts', 'blanc', 'L', 'm', 'http://localhost:8080/e_shop/photo/56-a-65_chemiseblanchem.jpg', 49, 73),
-(11, '63-s-64', 'zeste', 'Chemise Noir', 'Comme vous pouvez le voir c''est une chemise noir...', 'noir', 'M', 'm', 'http://localhost:8080/e_shop/photo/63-s-63_chemisenoirm.jpg', 59, 120),
-(12, '77-p-72', 'piole', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'http://localhost:8080/e_shop/photo/77-p-79_pullgrism2.jpg', 79, 99),
-(13, '77-l-71', 'azerty', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'http://localhost:8080/e_shop/photo/77-p-79_pullgrism2.jpg', 79, 99);
+(1, '11-d-23', 'tshirt', 'Tshirt Col V bleu pétrole', 'Tee-shirt en coton flammé liseré contrastant', 'bleu', 'M', 'm', 'photo/bleu.jpg', 20, 53),
+(2, '66-f-15', 'tshirt', 'Tshirt Col V rouge', 'c''est vraiment un super tshirt en soir&eacute;e !', 'rouge', 'L', 'm','photo/66-f-15_rouge.png', 15, 230),
+(3, '88-g-77', 'tshirt', 'Tshirt Col rond vert', 'Il vous faut ce tshirt Made In France !!!', 'vert', 'L', 'm', 'photo/88-g-77_vert.png', 29, 63),
+(4, '55-b-38', 'tshirt', 'Tshirt jaune électrique', 'le jaune reviens &agrave; la mode, non? :-)', 'jaune', 'S', 'm', 'photo/55-b-38_jaune.png', 20, 3),
+(5, '31-p-33', 'tshirt', 'Tshirt noir original', 'voici un tshirt noir tr&egrave;s original :p', 'noir', 'XL', 'm', 'photo/31-p-33_noir.jpg', 25, 80),
+(6, '56-a-65', 'tshirt', 'Chemise Blanche', 'Les chemises c''est bien mieux que les tshirts', 'blanc', 'L', 'm', 'photo/56-a-65_chemiseblanchem.jpg', 49, 73),
+(7, '63-s-63', 'tshirt', 'Chemise Noir', 'Comme vous pouvez le voir c''est une chemise noir...', 'noir', 'M', 'm', 'photo/63-s-63_chemisenoirm.jpg', 59, 120),
+(8, '77-p-79', 'tshirt', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99),
+(9, '77-l-79', 'tshirt', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99),
+(10, '56-a-67', 'tshirt', 'Chemise Blanche', 'Les chemises c''est bien mieux que les tshirts', 'blanc', 'L', 'm', 'photo/56-a-65_chemiseblanchem.jpg', 49, 73),
+(11, '63-s-64', 'zeste', 'Chemise Noir', 'Comme vous pouvez le voir c''est une chemise noir...', 'noir', 'M', 'm', 'photo/63-s-63_chemisenoirm.jpg', 59, 120),
+(12, '77-p-72', 'piole', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99),
+(13, '77-l-71', 'azerty', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99);
 

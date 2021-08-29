@@ -53,7 +53,7 @@ else
 		echo "<td>" . $_SESSION['panier']['id_produit'][$i] . "</td>";
 		echo "<td>" . $_SESSION['panier']['quantite'][$i] . "</td>";
 		echo "<td>" . $_SESSION['panier']['prix'][$i] .'€'. "</td>";
-		echo "<td><img src=".$_SESSION['panier']['photo'][$i] .  " width='70' height='70' /></td>";
+		echo "<td><img src=".RACINE_SITE.$_SESSION['panier']['photo'][$i] .  " width='70' height='70' /></td>";
 		echo "</tr>";
 	}
 	echo "<tr><th colspan='3'>Total</th><td colspan='2'>" . montantTotal() . "€</td></tr>";

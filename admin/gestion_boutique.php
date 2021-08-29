@@ -1,9 +1,6 @@
-
-	
 <?php
 require_once("../ctrl/init.ctrl.php");
-require_once("../ctrl/header.php");?>
-    <?php
+require_once("../ctrl/header.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 //--- VERIFICATION ADMIN ---//
 if(!internauteEstConnecteEtEstAdmin())
@@ -34,9 +31,9 @@ if(!empty($_POST))
 	if(!empty($_FILES['photo']['name']))
 	{	// debug($_FILES);
 		$nom_photo = $_FILES['photo']['name'];
-		$photo_bdd = RACINE_SITE . "photo/$nom_photo";
+		$photo_bdd = "photo/$nom_photo";
 		
-		$photo_dossier = $_SERVER['DOCUMENT_ROOT'] . RACINE_SITE . "/photo/$nom_photo"; 
+		$photo_dossier = $_SERVER['DOCUMENT_ROOT'] ."/e_shop/photo/$nom_photo"; 
 		copy($_FILES['photo']['tmp_name'],$photo_dossier);
 	}
 	foreach($_POST as $indice => $valeur)
@@ -76,7 +73,7 @@ if(isset($_GET['action']) && $_GET['action'] == "affichage")
 		{
 			if($indice == "photo")
 			{
-				echo '<td><img src="' . $information . '" width="70" height="70" /></td>';
+				echo '<td><img src="' .RACINE_SITE. $information . '" width="70" height="70" /></td>';
 			}
 			else
 			{
@@ -140,7 +137,7 @@ if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == '
 		if(isset($produit_actuel))
 		{
 			echo '<i>Vous pouvez charger une nouvelle photo si vous souhaitez la changer</i><br />';
-			echo '<img src="' . $produit_actuel['photo'] . '"  width="90" height="90" /><br />';
+			echo '<img src="' .RACINE_SITE. $produit_actuel['photo'] . '"  width="90" height="90" /><br />';
 			echo '<input type="hidden" name="photo_actuelle" value="' . $produit_actuel['photo'] . '" /><br />';
 		}
 		

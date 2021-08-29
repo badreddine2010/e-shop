@@ -9,13 +9,13 @@ require_once("../ctrl/header.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 if(isset($_GET['id_produit'])) 	{ $resultat = executeRequete("SELECT * FROM produit WHERE id_produit = '$_GET[id_produit]'"); }
 if($resultat->num_rows <= 0) { header("location:index.php/e_shop"); exit(); }
-
 $produit = $resultat->fetch_assoc();
+
 echo "<h3>Titre : $produit[titre]</h3><hr /><br />";
 echo "<p>Categorie: $produit[categorie]</p>";
 echo "<p>Couleur: $produit[couleur]</p>";
 echo "<p>Taille: $produit[taille]</p>";
-echo "<img src='$produit[photo]' width='150' height='150' />";
+echo "<img src=".RACINE_SITE.$produit['photo']." width='150' height='150' />";
 echo "<p><i>Description: $produit[description]</i></p><br />";
 echo "<p>Prix : $produit[prix] €</p><br />";
 
