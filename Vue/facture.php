@@ -18,7 +18,11 @@
     $pdf = new FPDF('P', 'mm', 'A4');
     $pdf->AddPage();
     
+<<<<<<< HEAD
     $pdf->Image('http://localhost/e-shop/ctrl/img/logo.jpeg',10,6,18);
+=======
+    $pdf->Image('http://localhost/e_shop/ctrl/img/logo.jpeg',10,6,18);
+>>>>>>> d73a1dc0bac2577b24b8b2aa24c2499edfdf454c
     $pdf->Ln(18);
     
     $pdf->SetFont('Arial','B',14);
