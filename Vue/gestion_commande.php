@@ -26,7 +26,7 @@ if(internauteEstConnecteEtEstAdmin())
 					<th>Nom</th>
 					<th>Prénom</th>
 					<th>Montant</th>
-					<th>Date et heure d'achat</th>
+					<th>Date d'achat</th>
 					<th>Etat</tthh>
 					<th>Adresse</th>
 					<th>Ville</th>
@@ -130,7 +130,7 @@ $id_membre = $_SESSION['membre']['id_membre'];
 				<tr>
 					<th>Commande</th>
 					<th>Montant</th>
-					<th>Date et heure d'achat</th>
+					<th>Date d'achat</th>
 					<th>Etat</th>
 					<th>Facture</th>
 				</tr>
