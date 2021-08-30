@@ -2,8 +2,8 @@
 .container{background-color: #d1e7dd;margin:0 auto;width: auto;}
 a{text-decoration: none;}
 /**************************************************** HAUT ************************************************/
-#header{ padding-top: 0rem;color: rgb(184, 68, 68); }
-header span{ text-emphasis-color: rgb(153, 21, 21); color: #431cc4;text-align: center;}
+#header{ padding-top: 0rem;color: rgb(194, 189, 189); }
+header span{ text-emphasis-color: rgb(209, 191, 191); color: #431cc4;text-align: center;}
 header  nav{ background:rgb(241, 236, 236); }
 .navbar {border-radius: .3rem;-webkit-border-radius: .3rem;-moz-border-radius: .3rem;-ms-border-radius: .3rem;-o-border-radius: .3rem;color: #fff; }
 #barre-e_shop .logo {border-radius: .25rem;-webkit-border-radius: .25rem;-moz-border-radius: .25rem;-ms-border-radius: .25rem;-o-border-radius: .25rem;}
@@ -25,7 +25,11 @@ footer{ background: #d1e7dd;color: #007bff; text-align: center; }
 .cadre  p{ padding: 10px; }
 .centre{text-align: center;}
 /**************************************************** BOUTIQUE ************************************************/
-.boutique-gauche{ float: left; width: 10%; background: #ca3232;min-height: 665px;   text-align: center; }
+.boutique-gauche{ float: left; width: 30%; background: #f2f2f2; min-height: 500px; margin-right: 10%; padding-top: 10px; text-align: center; }
+.boutique-gauche  ul{ list-style: none; padding: 0; }
+.boutique-gauche  ul  li  a{ display: block; padding: 10px; }
+.boutique-gauche  ul  li  a:hover{ background: #04baf6; color: #fff; }
+.boutique-gauche{ float: left; width: 10%; background: #a16969;min-height: 665px;   text-align: center; }
 .boutique-produit:hover{ background: #c0c0c0; }
 /**************************************************** DIVERS ************************************************/
 table{ border-collapse: collapse; }

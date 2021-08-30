@@ -64,8 +64,6 @@ echo "<td><a href='membres.php?msg=supok&&id_membre=" . $_SESSION['membre']['id_
 						<option value="Mme" <?php if(isset($_SESSION['membre']['civilite']) && $_SESSION['membre']['civilite'] == "Mme") print "selected"; ?>>Mme</option>
 					</select><br />
 					</div>
-
-		
 				<div class="mb-3">
 			<label for="nom">Nom</label>
 				<input type="text" class="form-control" name="nom" value="<?php if(isset($_SESSION['membre'])) print $_SESSION['membre']['nom']; ?>"/><br />

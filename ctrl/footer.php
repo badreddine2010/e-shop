@@ -10,8 +10,8 @@
 		   </object>
 		   </noscript><br>
    <div class="haut"><marquee>
-			<h4 class="Style6 Style22" style="color:#007bff"><strong><em><font face="arial,helvetica, sans-serif"> Bienvenue sur notre Site     <?php echo "<img src='http://localhost/e-shop/ctrl/img/logo2.png' width='102' height='52' />";
- ?> </font></em>
+			<h4 class="Style6 Style22" style="color:orange"  ><strong><em><font face="arial,helvetica, sans-serif"> Bienvenue sur notre Site     <?php echo "<img src='http://localhost/e-shop/ctrl/img/logo2.png' width='102' height='52' />";
+ ?> Livraison gratuit à partir de 100€ d'achat!!!!!!!</font></em>
 			</strong></h4>
 		  </marquee>
    <div class="gauche"></div>

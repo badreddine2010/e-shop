@@ -4,17 +4,15 @@ require_once("../ctrl/header.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 //--- AFFICHAGE DES CATEGORIES ---//
 $categories_des_produits = executeRequete("SELECT DISTINCT categorie FROM produit");
-echo '<div id="header">';
-echo'<nav class="navbar navbar-expand-lg navbar-light bg-light">';
-echo '<div class="container">';
-
+$contenu .= '<div class="boutique-gauche">';
+$contenu .= "<ul>";
 while($cat = $categories_des_produits->fetch_assoc())
 {
-	echo"<a href='../vue/vitrine.php?categorie="	. $cat['categorie'] . "'>" . $cat['categorie'] . "</a>";
+	$contenu .= "<li><a href='?categorie="	. $cat['categorie'] . "'>" . $cat['categorie'] . "</a></li>";
 }
-
-echo"</nav>";
-
+$contenu .= "</ul>";
+$contenu .= "</div>";
+echo $contenu;
 
 //--- AFFICHAGE DES PRODUITS ---//
 echo'<div class="boutique-milieu">';
