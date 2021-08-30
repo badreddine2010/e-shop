@@ -70,5 +70,9 @@ else
 	echo "<tr><td colspan='5'><a href='?action=vider'>Vider mon panier</a></td></tr>";
 }
 echo "</table><br />";
-?><?php
-include ("../ctrl/footer.php");?>
+?>
+</div>
+</div>
+</div>
+
+<?php include ("../ctrl/footer.php");?>

@@ -92,6 +92,8 @@ if(isset($_REQUEST['mdp'], $_REQUEST['nom'], $_REQUEST['prenom'], $_REQUEST['ema
 	 <button type="submit" name="inscription" class="col-12 col-md-12 btn btn-primary"> S'inscrire </button>
 </form>
 </div>
+</div>
+</div>
 
 <?php require_once("../ctrl/footer.php"); ?>
 

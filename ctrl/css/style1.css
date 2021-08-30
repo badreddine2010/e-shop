@@ -1,1 +1,4 @@
-.card{float: left; width: 60%; }
+.card{float: left; width: auto; margin-top: 20px;margin-left: 25px;}
+a{text-decoration: none;}
+footer ul li {text-decoration: none;}
+

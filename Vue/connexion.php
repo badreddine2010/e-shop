@@ -6,7 +6,6 @@ require_once("../ctrl/init.ctrl.php");?>
 <?php require_once("../ctrl/header.php");?>
 <?php
 ?></head>
-<body>
 <?php
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 if(isset($_GET['action']) && $_GET['action'] == "deconnexion") 
@@ -64,6 +63,7 @@ if($_POST)
 </form>
 <p class="box-register"><a href="pwlost.php"><u>Vous avez oublié votre mot de passe ?</u></a></p>
 
-</body>
+</div>
+</div>
 
 <?php require_once("../ctrl/footer.php"); ?>

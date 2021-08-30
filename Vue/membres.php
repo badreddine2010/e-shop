@@ -44,9 +44,6 @@ echo "<script>alert(\"la modification a bien été prise en compte, reconnectez-
 
 //require_once("ctrl/menu.ctrl.php");
 // se désabonner
-?><span class="navbar-brand mb-0 h1"><?php
-echo "<td><a href='membres.php?msg=supok&&id_membre=" . $_SESSION['membre']['id_membre'] . "' onclick='return(confirm(\"Etes-vous sûr de vouloir supprimer votre compte?\"));'> Se désabonner </a></td>";
-?></span><?php
 ?>
 
         <!-- For demo purpose -->
@@ -96,5 +93,11 @@ echo "<td><a href='membres.php?msg=supok&&id_membre=" . $_SESSION['membre']['id_
 				</div>
 	
 			 <button type="submit" name="modification" class="col-12 col-md-12 btn btn-primary"> Mise à jour </button>	
+			 <span class="navbar-brand mb-0 h1"><?php
+echo "<td><a href='membres.php?msg=supok&&id_membre=" . $_SESSION['membre']['id_membre'] . "' onclick='return(confirm(\"Etes-vous sûr de vouloir supprimer votre compte?\"));'> Se désabonner </a></td>";
+?></span>
 			</form>
+			</div>
+			</div>
+
 <?php require_once("../ctrl/footer.php");?>
