@@ -1,6 +1,8 @@
 /**************************************************** GENERAL ************************************************/
-.container{background-color: #d1e7dd;margin:0 auto;width: auto;}
-a{text-decoration: none;}
+.container{margin:0 auto;width: auto;}
+.navbar{margin-top: 10px;}
+.title{background-color: #d1e7dd;margin-bottom: 5px;margin-bottom: 5px}
+.container a{text-decoration: none;}
 /**************************************************** HAUT ************************************************/
 #header{ padding-top: 0rem;color: rgb(194, 189, 189); }
 header span{ text-emphasis-color: rgb(209, 191, 191); color: #431cc4;text-align: center;}
@@ -17,6 +19,7 @@ header  nav{ background:rgb(241, 236, 236); }
 #carouselExampleInterval{margin: 0 auto; width: 1900px; height: 300px;}
 /**************************************************** BAS ************************************************/
 footer{ background: #d1e7dd;color: #007bff; text-align: center; }
+footer a ul li{text-decoration: none;}
 /**************************************************** GENERAL ************************************************/
 .erreur{ background:orange; padding: 5px; margin: 5px; }
 .validation{ background: #9e759e; padding: 5px; margin: 5px; }
@@ -25,11 +28,11 @@ footer{ background: #d1e7dd;color: #007bff; text-align: center; }
 .cadre  p{ padding: 10px; }
 .centre{text-align: center;}
 /**************************************************** BOUTIQUE ************************************************/
-.boutique-gauche{ float: left; width: 30%; background: #f2f2f2; min-height: 500px; margin-right: 10%; padding-top: 10px; text-align: center; }
 .boutique-gauche  ul{ list-style: none; padding: 0; }
-.boutique-gauche  ul  li  a{ display: block; padding: 10px; }
+.boutique-gauche  ul  li  a{ display: block; padding: 10px; text-decoration: none;}
 .boutique-gauche  ul  li  a:hover{ background: #04baf6; color: #fff; }
-.boutique-gauche{ float: left; width: 10%; background: #a16969;min-height: 665px;   text-align: center; }
+.boutique-gauche{ float: right; width: 12%; background: #d1e7dd;margin-top: 20px;   text-align: center; font-weight: bold;}
+.boutique-droite{float: left; width: 80% }
 .boutique-produit:hover{ background: #c0c0c0; }
 /**************************************************** DIVERS ************************************************/
 table{ border-collapse: collapse; }
@@ -44,3 +47,4 @@ header { text-align: center; color: #6b4a72;}
 .btn.btn-primary,.btn-primary {background-color: #007bff;border-color: #6b4a72;color: #fff;}
 #paiement .nav-pills .show>.nav-link{background-color:#6D81A8 ;border: 1px solid #c4c4c4;color: white;}
 #paiement .nav-pills a.nav-link {color:#0d1b2a ;border: 1px solid #c4c4c4;}
+li {text-decoration: none;}

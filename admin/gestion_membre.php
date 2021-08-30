@@ -20,8 +20,7 @@ if(isset($_GET['msg']) && $_GET['msg'] == "supok")
 //require_once("../ctrl/menu.ctrl.php");
 ?>
 	   <!-- For demo purpose -->
-	   <div class="row mb-4">
-		   <div class="col-lg-12 mx-auto text-center"><?php
+	  <?php
 echo '<h2> Voici les membres inscrits au site </h2>';
 	$resultat = executeRequete("SELECT id_membre,nom,prenom,email,ville,code_postal,adresse FROM membre where statut='user'");
 	echo "Nombre de membre(s) : " . $resultat->num_rows;
@@ -44,5 +43,9 @@ echo '<h2> Voici les membres inscrits au site </h2>';
 		echo '</tr>';
 	}
 	echo '</table>';
-	 require_once("../ctrl/footer.php");?>
+	?>
+	</div>
+
+
+	 <?php require_once("../ctrl/footer.php");?>
 	

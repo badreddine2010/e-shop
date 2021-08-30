@@ -2,35 +2,33 @@
 require_once("ctrl/init.ctrl.php");
 require_once("ctrl/header.php");
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
-?>
-<section>
-  <?php
 //--- AFFICHAGE DES CATEGORIES ---//
-$categories_des_produits = executeRequete("SELECT DISTINCT categorie FROM produit");
-echo '<div id="header">';
+$categories_des_produits = executeRequete("SELECT DISTINCT categorie FROM produit");?>
+<center><?php
 echo'<nav class="navbar navbar-expand-lg navbar-light bg-light">';
-echo '<div class="container">';
+echo '<div class="container-fluid">';
 
 while($cat = $categories_des_produits->fetch_assoc())
 {
 	echo"<b><a class='link-dark' href='" . RACINE_SITE . "/vue/vitrine.php?categorie="	. $cat['categorie'] . "'>" . $cat['categorie'] . "</a></b>";
 }
 
-echo"</nav>";
-
-echo'<div class="boutique-droite">';
+echo"</nav>";?>
+</div>
+</center><?php
+echo'<div class="container">';
 ?>
-<CENter>
+
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="photo\1.jpg" class="d-block w-70 " alt="..." width="AUTO" height="300">
+      <img src="photo\1.jpg" class="d-block w-70 " alt="..." width="auto" height="308">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="photo\2.jpg" class="d-block w-70" alt="..." width="AUTO" height="300">
+      <img src="photo\2.jpg" class="d-block w-70" alt="..." width="auto" height="305">
     </div>
     <div class="carousel-item">
-      <img src="photo\3.jpg" class="d-block w-70" alt="..." width="AUTO" height="300">
+      <img src="photo\3.jpg" class="d-block w-70" alt="..." width="auto" height="303">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -41,30 +39,25 @@ echo'<div class="boutique-droite">';
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
-</CENter><?php
-echo"</div>";
+</div><?php
+//--------------------------------- TRAITEMENTS PHP ---------------------------------//
 
-//--- AFFICHAGE DES PRODUITS ---//
-echo'<div class="boutique-milieu">';
-
-if(isset($_GET['categorie']))
-{
-	$donnees = executeRequete("SELECT id_produit,reference,titre,photo,prix FROM produit WHERE categorie='$_GET[categorie]'");	
+$donnees = executeRequete("SELECT id_produit,reference,titre,photo,prix FROM produit");	
 	while($produit = $donnees->fetch_assoc())
 	{
-	
-
+	?>
+<center><?php
 echo'<div class="card" style="width: 16rem;">';
-echo"<a href=\"vue/fiche_produit.php?id_produit=$produit[id_produit]\"><img src=\"$produit[photo]\" width=\"130\" height=\"188\" class='card-img-top'/></a>";
+echo"<a href=\"fiche_produit.php?id_produit=$produit[id_produit]\"><img src=".RACINE_SITE.$produit['photo']." width=\"120\" height=\"188\" class='card-img-top'/></a>";
 echo '<div class="card-body">';
 echo "<h5 class='card-title'>$produit[titre]</h5>";
 echo"<p>$produit[prix] €</p>";
-echo'<a href="vue/fiche_produit.php?id_produit=' . $produit['id_produit'] . '" class="btn btn-primary">Voir la fiche</a>';
+echo'<a href="fiche_produit.php?id_produit=' . $produit['id_produit'] . '" class="btn btn-primary">Voir la fiche</a>';
 echo'</div>';
 echo'</div>';
-	}}
-?>
+	}echo"</div>";
+  
+?></center>
 <head>
 <link rel="stylesheet" href="<?php echo RACINE_SITE; ?>ctrl/css/style1.css" />
 <!-- CSS only -->

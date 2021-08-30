@@ -41,6 +41,7 @@ else
 }
 echo "<br /><a href='index.php?categorie=" . $produit['categorie'] . "'>Retour vers la sélection de " . $produit['categorie'] . "</a>";
 ?>
-<?php
-require_once("../ctrl/footer.php");?>
+</div>
+
+<?php require_once("../ctrl/footer.php");?>
 

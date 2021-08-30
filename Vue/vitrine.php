@@ -15,7 +15,7 @@ $contenu .= "</div>";
 echo $contenu;
 
 //--- AFFICHAGE DES PRODUITS ---//
-echo'<div class="boutique-milieu">';
+
 
 if(isset($_GET['categorie']))
 {
@@ -23,6 +23,7 @@ if(isset($_GET['categorie']))
 	while($produit = $donnees->fetch_assoc())
 	{
 	
+		echo  '<div class="col-mt-5">';
 
 echo'<div class="card" style="width: 16rem;">';
 echo"<a href=\"fiche_produit.php?id_produit=$produit[id_produit]\"><img src=".RACINE_SITE.$produit['photo']." width=\"130\" height=\"188\" class='card-img-top'/></a>";

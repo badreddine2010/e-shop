@@ -154,8 +154,11 @@ if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == '
 	</div>
 	
 	</div>
-	
 	</div>
+
 	';
-}
-require_once("../ctrl/footer.php"); ?>
+}?>
+</div>
+</div>
+
+<?php require_once("../ctrl/footer.php"); ?>
