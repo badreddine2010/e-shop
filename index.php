@@ -5,10 +5,9 @@ require_once("ctrl/header.php");
 //--- AFFICHAGE DES CATEGORIES ---//
 $categories_des_produits = executeRequete("SELECT DISTINCT categorie FROM produit");?>
 <center><?php
-echo'<nav class="navbar navbar-expand-lg navbar-light bg-light">';
 echo '<div class="container-fluid">';
 
-	echo"<b><a class='link-dark' href='" . RACINE_SITE . "/vue/vitrine.php'>CATALOGUE</a></b>";
+	echo"<h1><a class='link-blue active' href='" . RACINE_SITE . "/vue/vitrine.php'>Notre Catalogue</a></h1>";
 
 echo"</nav>";?>
 </div>
