@@ -8,10 +8,7 @@ $categories_des_produits = executeRequete("SELECT DISTINCT categorie FROM produi
 echo'<nav class="navbar navbar-expand-lg navbar-light bg-light">';
 echo '<div class="container-fluid">';
 
-while($cat = $categories_des_produits->fetch_assoc())
-{
-	echo"<b><a class='link-dark' href='" . RACINE_SITE . "/vue/vitrine.php?categorie="	. $cat['categorie'] . "'>" . $cat['categorie'] . "</a></b>";
-}
+	echo"<b><a class='link-dark' href='" . RACINE_SITE . "/vue/vitrine.php'>CATALOGUE</a></b>";
 
 echo"</nav>";?>
 </div>
