@@ -40,7 +40,7 @@
 		<li class="nav-item">
           <a class="nav-link" href="<?php echo RACINE_SITE; ?>admin/gestion_boutique.php?action=ajout">Ajout Produit</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/commentaires.php">Messages</a>  </li>    
+        <li class="nav-item"><a class="nav-link" href="<?php echo RACINE_SITE; ?>admin/commentaires.php">Messages</a>  </li>    
        					<?php } if(internauteEstConnecte()) {?>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/membres.php">Profil</a>

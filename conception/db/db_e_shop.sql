@@ -157,6 +157,7 @@ INSERT INTO `produit` (`id_produit`, `reference`, `categorie`, `titre`, `descrip
 CREATE TABLE IF NOT EXISTS `comments` (
   `id_comment` int(3) NOT NULL AUTO_INCREMENT,
   `nom` varchar(50) NOT NULL,
+  `objet` varchar(50) NOT NULL,
   `comment` varchar(250) NOT NULL,
   `dater` date NOT NULL,
  
