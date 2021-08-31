@@ -49,7 +49,7 @@
             $pdf->cell(0,10, utf8_decode("Facture n°:"). " " . $rowCmd['id_commande'], 'TB', 1, 'C');
             $pdf->SetFont('Arial','',14);
             $pdf->Ln(8);
-            $pdf->write(7, 'Le : '. $rowCmd['date_enregistrement']."\n");
+            $pdf->write(7, 'Le : '.strftime('%d-%m-%Y',strtotime($rowCmd['date_enregistrement']))."\n");
             
     }
     $pdf->Ln(4);

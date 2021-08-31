@@ -44,11 +44,11 @@ $donnees = executeRequete("SELECT id_produit,reference,titre,photo,prix FROM pro
 	?>
 <center><?php
 echo'<div class="card" style="width: 16rem;">';
-echo"<a href=\"fiche_produit.php?id_produit=$produit[id_produit]\"><img src=".RACINE_SITE.$produit['photo']." width=\"120\" height=\"188\" class='card-img-top'/></a>";
+echo"<a href=\"vue/fiche_produit.php?id_produit=$produit[id_produit]\"><img src=".RACINE_SITE.$produit['photo']." width=\"120\" height=\"188\" class='card-img-top'/></a>";
 echo '<div class="card-body">';
 echo "<h5 class='card-title'>$produit[titre]</h5>";
 echo"<p>$produit[prix] €</p>";
-echo'<a href="fiche_produit.php?id_produit=' . $produit['id_produit'] . '" class="btn btn-primary">Voir la fiche</a>';
+echo'<a href="vue/fiche_produit.php?id_produit=' . $produit['id_produit'] . '" class="btn btn-primary">Voir la fiche</a>';
 echo'</div>';
 echo'</div>';
 	}echo"</div>";

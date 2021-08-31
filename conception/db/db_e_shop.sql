@@ -148,3 +148,21 @@ INSERT INTO `produit` (`id_produit`, `reference`, `categorie`, `titre`, `descrip
 (12, '77-p-72', 'polo', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99),
 (13, '77-l-71', 'short', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99);
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `comments`
+--
+
+CREATE TABLE IF NOT EXISTS `comments` (
+  `id_comment` int(3) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) NOT NULL,
+  `comment` varchar(250) NOT NULL,
+  `dater` date NOT NULL,
+ 
+  PRIMARY KEY (`id_comment`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Contenu de la table `details_commande`
+--

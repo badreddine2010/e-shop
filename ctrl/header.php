@@ -40,7 +40,7 @@
 		<li class="nav-item">
           <a class="nav-link" href="<?php echo RACINE_SITE; ?>admin/gestion_boutique.php?action=ajout">Ajout Produit</a>
         </li>
-
+        <li class="nav-item"><a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/commentaires.php">Messages</a>  </li>    
        					<?php } if(internauteEstConnecte()) {?>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/membres.php">Profil</a>
@@ -55,11 +55,16 @@
 		<li class="nav-item">
           <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/connexion.php?action=deconnexion">Logout</a>
         </li>
-      </ul>
-<a class="nav" ><?=$_SESSION['membre']['prenom']?><i class="bi bi-person-check-fill"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+      </ul> 
+    <ul>
+   
+<li><a class="nav" ><?=$_SESSION['membre']['prenom']?><i class="bi bi-person-check-fill"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
   <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-</svg></i></a>       
+</svg></i></a></li>
+                 </ul>
+
+   
         
         <?php } else { ?>
 		<li class="nav-item">

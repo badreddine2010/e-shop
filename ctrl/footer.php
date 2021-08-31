@@ -17,7 +17,7 @@
 </nav>
 
 <footer>
-            <u><h5 >Contactez-nous</h5></u>
+<a href="../vue/feedback.php" >Contactez-nous</a>
 				
               <ul>
  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">

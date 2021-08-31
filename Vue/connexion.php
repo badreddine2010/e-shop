@@ -11,6 +11,8 @@ require_once("../ctrl/init.ctrl.php");?>
 if(isset($_GET['action']) && $_GET['action'] == "deconnexion") 
 {
 	session_destroy(); 
+    header("location:../index.php"); 
+
 }
 if(internauteEstConnecte()) 
 {
