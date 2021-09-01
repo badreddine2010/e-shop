@@ -20,6 +20,9 @@ if(internauteEstConnecte())
 }
 if($_POST)
 { 
+    $_POST['email'] = htmlentities($_POST['email'], ENT_QUOTES);
+    
+    
     $resultat = executeRequete("SELECT * FROM membre WHERE email='$_POST[email]'");
    
     if($resultat->num_rows != 0)

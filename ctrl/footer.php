@@ -31,9 +31,6 @@
 </svg><a href="https://www.instagram.com/" target="_blank">Follow us on instagram</a><br>
 
 
- <!-- JS Libraries -->
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="/dashboard/javascripts/all.js" type="text/javascript"></script>
 
 				Email:&nbsp;e_shop@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;       Phone:&nbsp;+33010203040506
 
