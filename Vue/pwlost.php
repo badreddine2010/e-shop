@@ -76,7 +76,7 @@
     <form class="box" action="" method="post" name="login">
 	
         <div class="mb-3">
-            <h4 class="title">Vous avez oublié votre mot de passe</h4>
+            <h4 class="title">Renseigner votre email</h4>
         </div>    
 
 		<div class="form-floating mb-3">
