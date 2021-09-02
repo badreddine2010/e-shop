@@ -1,0 +1,80 @@
+﻿CREATE TABLE Catégorie(
+   idCategorie INT,
+   libele VARCHAR(50),
+   PRIMARY KEY(idCategorie)
+);
+
+CREATE TABLE produit(
+   Id_produit INT,
+   description VARCHAR(50),
+   stock INT,
+   prix DECIMAL(15,2),
+   taille INT,
+   photo VARCHAR(50),
+   categorie VARCHAR(50),
+   titre VARCHAR(50),
+   couleur VARCHAR(50),
+   public VARCHAR(50),
+   reference VARCHAR(50),
+   PRIMARY KEY(Id_produit)
+);
+
+CREATE TABLE Commande(
+   id_commande INT,
+   id_membre VARCHAR(50),
+   montant DECIMAL(15,2),
+   date_enregistrement VARCHAR(50),
+   etat VARCHAR(50),
+   PRIMARY KEY(id_commande)
+);
+
+CREATE TABLE Comments(
+   Id_Comment INT,
+   nom VARCHAR(50),
+   objet VARCHAR(50),
+   comment VARCHAR(50),
+   dater DATE,
+   PRIMARY KEY(Id_Comment)
+);
+
+CREATE TABLE Membre(
+   id_membre INT,
+   valideuser LOGICAL,
+   mdp VARCHAR(50),
+   email VARCHAR(50),
+   civilite VARCHAR(50),
+   nom VARCHAR(50),
+   prenom VARCHAR(50),
+   statut VARCHAR(50),
+   adresse VARCHAR(50),
+   changepwd INT,
+   ville VARCHAR(50),
+   codePostal INT,
+   id_commande INT NOT NULL,
+   PRIMARY KEY(id_membre),
+   FOREIGN KEY(id_commande) REFERENCES Commande(id_commande)
+);
+
+CREATE TABLE details_commande(
+   Id_produit INT,
+   id_commande INT,
+   PRIMARY KEY(Id_produit, id_commande),
+   FOREIGN KEY(Id_produit) REFERENCES produit(Id_produit),
+   FOREIGN KEY(id_commande) REFERENCES Commande(id_commande)
+);
+
+CREATE TABLE Appartient(
+   idCategorie INT,
+   Id_produit INT,
+   PRIMARY KEY(idCategorie, Id_produit),
+   FOREIGN KEY(idCategorie) REFERENCES Catégorie(idCategorie),
+   FOREIGN KEY(Id_produit) REFERENCES produit(Id_produit)
+);
+
+CREATE TABLE Commenter(
+   id_membre INT,
+   Id_Comment INT,
+   PRIMARY KEY(id_membre, Id_Comment),
+   FOREIGN KEY(id_membre) REFERENCES Membre(id_membre),
+   FOREIGN KEY(Id_Comment) REFERENCES Comments(Id_Comment)
+);

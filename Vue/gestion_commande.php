@@ -45,7 +45,7 @@ if(internauteEstConnecteEtEstAdmin())
 		echo '<td>' . $commande['nom'] . '</td>';
 		echo '<td>' . $commande['prenom'] . '</td>';
 		echo '<td>' . $commande['montant'] . '</td>';
-		echo '<td>' . $commande['date_enregistrement'] . '</td>';
+		echo '<td>' .strftime('%d-%m-%Y',strtotime($commande['date_enregistrement'])).'</td>';
 		echo '<td>' . $commande['etat'] . '</td>';	
 		echo '<td>' . $commande['adresse'] . '</td>';
 		echo '<td>' . $commande['ville'] . '</td>';
@@ -145,7 +145,7 @@ $id_membre = $_SESSION['membre']['id_membre'];
 		echo '<tr>';
 		echo '<td><a href="gestion_commande.php?suivi=' . $commande['id_commande'] . '">Voir la commande ' . $commande['id_commande'] . '</a></td>';	
 		echo '<td>' . $commande['montant'] . '€'.'</td>';
-		echo '<td>' . $commande['date_enregistrement'] . '</td>';
+		echo '<td>' .strftime('%d-%m-%Y',strtotime($commande['date_enregistrement'])).'</td>';
 		echo '<td>' . $commande['etat'] . '</td>';
 		echo '<td><a class="" target="_blank" href="facture.php?id_commande='.$commande["id_commande"].'">Facture au format pdf</a></td>';
 		echo '</tr>	';
