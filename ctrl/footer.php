@@ -16,7 +16,7 @@
 </nav>
 
 <footer>
-<a href="<?php echo RACINE_SITE; ?>vue/feedback.php" ><u>Contactez-nous : </u></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="<?php echo RACINE_SITE; ?>vue/feedback.php" ><u>Contactez-nous</u></a>&nbsp;&nbsp;&nbsp;&nbsp;
 				
             
 <a href="https://twitter.com/e_shopfriends" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
