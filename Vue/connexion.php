@@ -9,12 +9,7 @@
 
 <?php
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
-if(isset($_GET['action']) && $_GET['action'] == "deconnexion") 
-{
-	session_destroy(); 
-    header("location:../index.php"); 
 
-}
 if(internauteEstConnecte()) 
 {
 	header("location:profil.php");

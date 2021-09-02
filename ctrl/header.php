@@ -53,7 +53,7 @@
           <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/gestion_commande.php">Commandes</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/connexion.php?action=deconnexion">Logout</a>
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>ctrl/logout.php">Logout</a>
         </li>
       </ul> 
     <ul>
