@@ -12,6 +12,7 @@ echo '<div class="container-fluid">';
 echo"</nav>";?>
 </div>
 </center><?php
+//--------------------------------- Défiler le carousel ---------------------------------//
 echo'<div class="container">';
 ?>
 
@@ -37,7 +38,7 @@ echo'<div class="container">';
   </button>
 </div><?php
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
-
+//--------------------------------- Affichage de tous les produits ---------------------------------//
 $donnees = executeRequete("SELECT id_produit,reference,titre,photo,prix FROM produit");	
 	while($produit = $donnees->fetch_assoc())
 	{
@@ -51,8 +52,7 @@ echo"<p>$produit[prix] €</p>";
 echo'<a href="view/fiche_produit.php?id_produit=' . $produit['id_produit'] . '" class="btn btn-primary">Voir la fiche</a>';
 echo'</div>';
 echo'</div>';
-	}echo"</div>";
-  
+	}echo"</div>"; 
 ?></center>
 <head>
 <link rel="stylesheet" href="<?php echo RACINE_SITE; ?>ctrl/css/style1.css" />

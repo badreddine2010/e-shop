@@ -1,8 +1,5 @@
-<?php
-
-require_once("../ctrl/init.ctrl.php");
-require_once("../ctrl/header.php");
-?>
+<?php require_once("../ctrl/init.ctrl.php");?>
+<?php require_once("../ctrl/header.php");?>
 
 <html>
 

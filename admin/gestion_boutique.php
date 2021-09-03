@@ -22,14 +22,14 @@ if(isset($_GET['action']) && $_GET['action'] == "suppression")
 }
 //--- ENREGISTREMENT PRODUIT ---//
 if(!empty($_POST))
-{	// debug($_POST);
+{	debug($_POST);
 	$photo_bdd = ""; 
 	if(isset($_GET['action']) && $_GET['action'] == 'modification')
 	{
 		$photo_bdd = $_POST['photo_actuelle'];
 	}
 	if(!empty($_FILES['photo']['name']))
-	{	// debug($_FILES);
+	{	debug($_FILES);
 		$nom_photo = $_FILES['photo']['name'];
 		$photo_bdd = "photo/$nom_photo";
 		
