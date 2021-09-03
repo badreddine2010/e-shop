@@ -7,7 +7,7 @@ $categories_des_produits = executeRequete("SELECT DISTINCT categorie FROM produi
 <center><?php
 echo '<div class="container-fluid">';
 
-	echo"<h1><a class='link-blue active' href='" . RACINE_SITE . "/vue/vitrine.php'>Notre Catalogue</a></h1>";
+	echo"<h1><a class='link-blue active' href='" . RACINE_SITE . "vue/vitrine.php'>Notre Catalogue</a></h1>";
 
 echo"</nav>";?>
 </div>
