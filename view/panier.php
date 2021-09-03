@@ -8,7 +8,7 @@ if(isset($_POST['valider'])){
         
 	
 
-	echo "<script type='text/javascript'> document.location = '".RACINE_SITE."vue/paiement.php'; </script>";
+	echo "<script type='text/javascript'> document.location = '".RACINE_SITE."view/paiement.php'; </script>";
 }
 
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
@@ -38,7 +38,7 @@ if(isset($_GET['action']) && $_GET['action'] == "vider")
 //echo 'Panier';
 echo '<h2> Votre panier </h2>';
 echo "<table class='table table-bordered'>";
-echo "<tr><th>Désignation produit</th><th>Produit</th><th>Quantité</th><th>Prix Unitaire</th><th>Photo</th></tr>";
+echo "<tr><th>Désignation produit</th><th>Quantité</th><th>Prix Unitaire</th><th>Photo</th></tr>";
 
 if(empty($_SESSION['panier']['id_produit'])) // panier vide
 {
@@ -50,7 +50,6 @@ else
 	{
 		echo "<tr>";
 		echo "<td>" . $_SESSION['panier']['titre'][$i] . "</td>";
-		echo "<td>" . $_SESSION['panier']['id_produit'][$i] . "</td>";
 		echo "<td>" . $_SESSION['panier']['quantite'][$i] . "</td>";
 		echo "<td>" . $_SESSION['panier']['prix'][$i] .'€'. "</td>";
 		echo "<td><img src=".RACINE_SITE.$_SESSION['panier']['photo'][$i] .  " width='70' height='70' /></td>";
@@ -65,7 +64,7 @@ else
 	}
 	else 
 	{
-		echo '<tr><td colspan="3">Veuillez vous <a href="inscription.php">inscrire</a> ou vous <a href="connexion.php">connecter</a> afin de pouvoir payé</td></tr>';
+		echo '<tr><td colspan="3">Veuillez vous <a href="inscription.php">inscrire</a> ou vous <a href="connexion.php">connecter</a> pour commander</td></tr>';
 	}
 	echo "<tr><td colspan='5'><a href='?action=vider'>Vider mon panier</a></td></tr>";
 }
