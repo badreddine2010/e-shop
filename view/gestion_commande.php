@@ -174,9 +174,7 @@ $id_membre = $_SESSION['membre']['id_membre'];
 			?>
 			<thead>
 					<tr>
-						<th>Id_Détail_Commande</th>
 						<th>Numéro de Commande</th>
-						<th>Id_Produit</th>
 						<th>Désignation</th>
 						<th>Quantité</th>
 						<th>Montant</th>
@@ -190,9 +188,7 @@ $id_membre = $_SESSION['membre']['id_membre'];
 	
 		{
 			echo '<tr>';
-				echo '<td>' . $details_commande['id_details_commande'] . '</td>';
 				echo '<td>' . $details_commande['id_commande'] . '</td>';
-				echo '<td>' . $details_commande['id_produit'] . '</td>';
 				echo '<td>' . $details_commande['designation'] . '</td>';
 				echo '<td>' . $details_commande['quantite'] . '</td>';
 				echo '<td>' . $details_commande['prix'] .'€'. '</td>';

@@ -16,20 +16,20 @@ if(isset($_GET['action']) && $_GET['action'] == "suppression")
 	$produit_a_supprimer = $resultat->fetch_assoc();
 	$chemin_photo_a_supprimer = $_SERVER['DOCUMENT_ROOT'] . $produit_a_supprimer['photo'];
 	if(!empty($produit_a_supprimer['photo']) && file_exists($chemin_photo_a_supprimer))	unlink($chemin_photo_a_supprimer);
-	echo '<div class="validation">Suppression du produit : ' . $_GET['id_produit'] . '</div>';
+	echo '<div class="alert alert-success">Suppression du produit : ' . $_GET['id_produit'] . '</div>';
 	executeRequete("DELETE FROM produit WHERE id_produit=$_GET[id_produit]");
 	$_GET['action'] = 'affichage';
 }
 //--- ENREGISTREMENT PRODUIT ---//
 if(!empty($_POST))
-{	debug($_POST);
+{	//debug($_POST);
 	$photo_bdd = ""; 
 	if(isset($_GET['action']) && $_GET['action'] == 'modification')
 	{
 		$photo_bdd = $_POST['photo_actuelle'];
 	}
 	if(!empty($_FILES['photo']['name']))
-	{	debug($_FILES);
+	{	//debug($_FILES);
 		$nom_photo = $_FILES['photo']['name'];
 		$photo_bdd = "photo/$nom_photo";
 		

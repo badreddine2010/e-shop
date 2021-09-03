@@ -1,8 +1,10 @@
 <?php require_once("../ctrl/init.ctrl.php");?>
 <?php require_once("../ctrl/header.php");?>
 
-<html>
 
+
+<!-- Affiichage html-->
+<html>
 <body>
 	<div class="wrapper">
 	
