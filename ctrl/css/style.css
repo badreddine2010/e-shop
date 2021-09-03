@@ -52,6 +52,19 @@ header { text-align: center; color: #6b4a72;}
 #paiement .nav-pills .show>.nav-link{background-color:#6D81A8 ;border: 1px solid #c4c4c4;color: white;}
 #paiement .nav-pills a.nav-link {color:#0d1b2a ;border: 1px solid #c4c4c4;}
 li {text-decoration: none;}
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+
+@font-face {
+    font-family: "Fontastique Fontastique";
+    src: url("fontastique.eot?") format("eot"), url("fontastique.woff") format("woff"), url("fontastique.ttf") format("truetype"), url("fontastique.svg#Fontastique-Fontastique") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#title {
+    font-family: "Fontastique Fontastique";
+    font-size: 2.2em;
+}
 /**************************************************** RESPONSIVE ************************************************/
 
 @media (min-width: 992px) and (max-width: 1199px) {
