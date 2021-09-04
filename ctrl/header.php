@@ -43,14 +43,14 @@
         <li class="nav-item"><a class="nav-link" href="<?php echo RACINE_SITE; ?>admin/commentaires.php">Messages</a>  </li>    
        					<?php } if(internauteEstConnecte()) {?>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/membres.php">Profil</a>
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>view/membres.php">Profil</a>
         </li>
 		
 		<li class="nav-item">
-          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/panier.php">Panier</a>
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>view/panier.php">Panier</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/gestion_commande.php">Commandes</a>
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>view/gestion_commande.php">Commandes</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="<?php echo RACINE_SITE; ?>ctrl/logout.php">Logout</a>
@@ -68,18 +68,18 @@
         
         <?php } else { ?>
 		<li class="nav-item">
-          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/inscription.php">Inscription</a>
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>view/inscription.php">Inscription</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/panier.php">panier</a>
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>view/panier.php">panier</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="<?php echo RACINE_SITE; ?>vue/connexion.php">connexion</a>
+          <a class="nav-link" href="<?php echo RACINE_SITE; ?>view/connexion.php">connexion</a>
         </li>
       </ul>
       <?php } ?>
 	  
-      <form action="<?=RACINE_SITE?>vue/recherche.php" method="GET" class="d-flex">
+      <form action="<?=RACINE_SITE?>view/recherche.php" method="GET" class="d-flex">
         <input class="form-control me-2" name="searcharea" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" name="search" type="submit">Search</button>
       </form>

@@ -7,11 +7,12 @@ $categories_des_produits = executeRequete("SELECT DISTINCT categorie FROM produi
 <center><?php
 echo '<div class="container-fluid">';
 
-	echo"<h1><a class='link-blue active' href='" . RACINE_SITE . "/vue/vitrine.php'>Notre Catalogue</a></h1>";
+	echo"<h1><a class='link-blue active' href='" . RACINE_SITE . "view/vitrine.php'>Notre Catalogue</a></h1>";
 
 echo"</nav>";?>
 </div>
 </center><?php
+//--------------------------------- Défiler le carousel ---------------------------------//
 echo'<div class="container">';
 ?>
 
@@ -37,22 +38,21 @@ echo'<div class="container">';
   </button>
 </div><?php
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
-
+//--------------------------------- Affichage de tous les produits ---------------------------------//
 $donnees = executeRequete("SELECT id_produit,reference,titre,photo,prix FROM produit");	
 	while($produit = $donnees->fetch_assoc())
 	{
 	?>
 <center><?php
 echo'<div class="card" style="width: 16rem;">';
-echo"<a href=\"vue/fiche_produit.php?id_produit=$produit[id_produit]\"><img src=".RACINE_SITE.$produit['photo']." width=\"120\" height=\"188\" class='card-img-top'/></a>";
+echo"<a href=\"view/fiche_produit.php?id_produit=$produit[id_produit]\"><img src=".RACINE_SITE.$produit['photo']." width=\"120\" height=\"188\" class='card-img-top'/></a>";
 echo '<div class="card-body">';
 echo "<h5 class='card-title'>$produit[titre]</h5>";
 echo"<p>$produit[prix] €</p>";
-echo'<a href="vue/fiche_produit.php?id_produit=' . $produit['id_produit'] . '" class="btn btn-primary">Voir la fiche</a>';
+echo'<a href="view/fiche_produit.php?id_produit=' . $produit['id_produit'] . '" class="btn btn-primary">Voir la fiche</a>';
 echo'</div>';
 echo'</div>';
-	}echo"</div>";
-  
+	}echo"</div>"; 
 ?></center>
 <head>
 <link rel="stylesheet" href="<?php echo RACINE_SITE; ?>ctrl/css/style1.css" />

@@ -1,11 +1,10 @@
-<?php
+<?php require_once("../ctrl/init.ctrl.php");?>
+<?php require_once("../ctrl/header.php");?>
 
-require_once("../ctrl/init.ctrl.php");
-require_once("../ctrl/header.php");
-?>
 
+
+<!-- Affiichage html-->
 <html>
-
 <body>
 	<div class="wrapper">
 	
