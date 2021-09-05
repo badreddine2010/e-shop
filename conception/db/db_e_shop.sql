@@ -95,7 +95,8 @@ CREATE TABLE IF NOT EXISTS `membre` (
   `code_postal` int(5) unsigned zerofill NOT NULL,
   `adresse` varchar(50) NOT NULL,
   `statut` varchar(50) NOT NULL,
-  PRIMARY KEY (`id_membre`)
+  PRIMARY KEY (`id_membre`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
