@@ -1,80 +1,72 @@
-ï»¿CREATE TABLE CatÃ©gorie(
-   idCategorie INT,
-   libele VARCHAR(50),
-   PRIMARY KEY(idCategorie)
-);
+Sub Create_Tables()
 
-CREATE TABLE produit(
-   Id_produit INT,
-   description VARCHAR(50),
-   stock INT,
-   prix DECIMAL(15,2),
-   taille INT,
-   photo VARCHAR(50),
-   categorie VARCHAR(50),
-   titre VARCHAR(50),
-   couleur VARCHAR(50),
-   public VARCHAR(50),
-   reference VARCHAR(50),
-   PRIMARY KEY(Id_produit)
-);
+DoCmd.RunSQL "CREATE TABLE Catégorie(" & _
+   "idCategorie INT," & _
+   "libele VARCHAR(50)," & _
+   "PRIMARY KEY(idCategorie)" & _
+");"   
 
-CREATE TABLE Commande(
-   id_commande INT,
-   id_membre VARCHAR(50),
-   montant DECIMAL(15,2),
-   date_enregistrement VARCHAR(50),
-   etat VARCHAR(50),
-   PRIMARY KEY(id_commande)
-);
+DoCmd.RunSQL "CREATE TABLE produit(" & _
+   "Id_produit INT," & _
+   "description VARCHAR(50)," & _
+   "stock INT," & _
+   "prix DECIMAL(15,2)," & _
+   "taille INT," & _
+   "photo VARCHAR(50)," & _
+   "categorie VARCHAR(50)," & _
+   "titre VARCHAR(50)," & _
+   "couleur VARCHAR(50)," & _
+   "public VARCHAR(50)," & _
+   "reference VARCHAR(50)," & _
+   "idCategorie INT NOT NULL," & _
+   "PRIMARY KEY(Id_produit)," & _
+   "FOREIGN KEY(idCategorie) REFERENCES Catégorie(idCategorie)" & _
+");"   
 
-CREATE TABLE Comments(
-   Id_Comment INT,
-   nom VARCHAR(50),
-   objet VARCHAR(50),
-   comment VARCHAR(50),
-   dater DATE,
-   PRIMARY KEY(Id_Comment)
-);
+DoCmd.RunSQL "CREATE TABLE Commande(" & _
+   "id_commande INT," & _
+   "id_membre VARCHAR(50)," & _
+   "montant DECIMAL(15,2)," & _
+   "date_enregistrement VARCHAR(50)," & _
+   "etat VARCHAR(50)," & _
+   "PRIMARY KEY(id_commande)" & _
+");"   
 
-CREATE TABLE Membre(
-   id_membre INT,
-   valideuser LOGICAL,
-   mdp VARCHAR(50),
-   email VARCHAR(50),
-   civilite VARCHAR(50),
-   nom VARCHAR(50),
-   prenom VARCHAR(50),
-   statut VARCHAR(50),
-   adresse VARCHAR(50),
-   changepwd INT,
-   ville VARCHAR(50),
-   codePostal INT,
-   id_commande INT NOT NULL,
-   PRIMARY KEY(id_membre),
-   FOREIGN KEY(id_commande) REFERENCES Commande(id_commande)
-);
+DoCmd.RunSQL "CREATE TABLE Membre(" & _
+   "id_membre INT," & _
+   "valideuser LOGICAL," & _
+   "mdp VARCHAR(50)," & _
+   "email VARCHAR(50)," & _
+   "civilite VARCHAR(50)," & _
+   "nom VARCHAR(50)," & _
+   "prenom VARCHAR(50)," & _
+   "statut VARCHAR(50)," & _
+   "adresse VARCHAR(50)," & _
+   "changepwd INT," & _
+   "ville VARCHAR(50)," & _
+   "codePostal INT," & _
+   "id_commande INT NOT NULL," & _
+   "PRIMARY KEY(id_membre)," & _
+   "FOREIGN KEY(id_commande) REFERENCES Commande(id_commande)" & _
+");"   
 
-CREATE TABLE details_commande(
-   Id_produit INT,
-   id_commande INT,
-   PRIMARY KEY(Id_produit, id_commande),
-   FOREIGN KEY(Id_produit) REFERENCES produit(Id_produit),
-   FOREIGN KEY(id_commande) REFERENCES Commande(id_commande)
-);
+DoCmd.RunSQL "CREATE TABLE Comments(" & _
+   "Id_Comment INT," & _
+   "nom VARCHAR(50)," & _
+   "objet VARCHAR(50)," & _
+   "comment VARCHAR(50)," & _
+   "dater DATE," & _
+   "id_membre INT NOT NULL," & _
+   "PRIMARY KEY(Id_Comment)," & _
+   "FOREIGN KEY(id_membre) REFERENCES Membre(id_membre)" & _
+");"   
 
-CREATE TABLE Appartient(
-   idCategorie INT,
-   Id_produit INT,
-   PRIMARY KEY(idCategorie, Id_produit),
-   FOREIGN KEY(idCategorie) REFERENCES CatÃ©gorie(idCategorie),
-   FOREIGN KEY(Id_produit) REFERENCES produit(Id_produit)
-);
+DoCmd.RunSQL "CREATE TABLE details_commande(" & _
+   "Id_produit INT," & _
+   "id_commande INT," & _
+   "PRIMARY KEY(Id_produit, id_commande)," & _
+   "FOREIGN KEY(Id_produit) REFERENCES produit(Id_produit)," & _
+   "FOREIGN KEY(id_commande) REFERENCES Commande(id_commande)" & _
+");"   
 
-CREATE TABLE Commenter(
-   id_membre INT,
-   Id_Comment INT,
-   PRIMARY KEY(id_membre, Id_Comment),
-   FOREIGN KEY(id_membre) REFERENCES Membre(id_membre),
-   FOREIGN KEY(Id_Comment) REFERENCES Comments(Id_Comment)
-);
+End Sub
