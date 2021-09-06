@@ -125,3 +125,15 @@ li {text-decoration: none;}
         border: 0;
     }
 }
+.clear{ clear: both; }
+@media (min-width: 768px) {
+  .zone-1 { width: 750px; }
+}
+@media (min-width: 992px) {
+  .zone-1 { width: 970px; }
+  .zone-2, .zone-3 { width: 50%; float: left; }
+}
+@media (min-width: 1200px) {
+  .zone-1 { width: 1170px;  }
+  .zone-2, .zone-3 { width: 50%; float: left; }
+}

@@ -27,7 +27,7 @@
 		<br><br><br>
 			<div class="wrap">
 				<h2>Votre Commentaire</h2><br>
-					<form style="" action="" method="post">
+					<form  action="" method="post">
 							<input class="form-control" type="text" name="nom" placeholder="Votre nom" required><br><br>
 							<input class="form-control" type="text" name="objet" placeholder="L'objet de votre commentaire" required><br><br>		
 							<textarea class="form-control" type="text" name="comment" placeholder="Rédiger votre commentaire ici..." required></textarea><br><br>

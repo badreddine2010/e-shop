@@ -1,0 +1,6 @@
+Catégorie = (idCategorie INT, libele VARCHAR(50));
+produit = (Id_produit INT, description VARCHAR(50), stock INT, prix DECIMAL(15,2), taille INT, photo VARCHAR(50), categorie VARCHAR(50), titre VARCHAR(50), couleur VARCHAR(50), public VARCHAR(50), reference VARCHAR(50), #idCategorie);
+Commande = (id_commande INT, id_membre VARCHAR(50), montant DECIMAL(15,2), date_enregistrement VARCHAR(50), etat VARCHAR(50));
+Comments = (Id_Comment INT, nom VARCHAR(50), objet VARCHAR(50), comment VARCHAR(50), dater DATE);
+Membre = (id_membre INT, valideuser LOGICAL, mdp VARCHAR(50), email VARCHAR(50), civilite VARCHAR(50), nom VARCHAR(50), prenom VARCHAR(50), statut VARCHAR(50), adresse VARCHAR(50), changepwd INT, ville VARCHAR(50), codePostal INT, #id_commande);
+details_commande = (#Id_produit, #id_commande,designation,quantite,prix,photo);
