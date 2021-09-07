@@ -1,6 +1,6 @@
 Sub Create_Tables()
 
-DoCmd.RunSQL "CREATE TABLE Catégorie(" & _
+DoCmd.RunSQL "CREATE TABLE Categorie(" & _
    "idCategorie INT," & _
    "libele VARCHAR(50)," & _
    "PRIMARY KEY(idCategorie)" & _
