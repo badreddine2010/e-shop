@@ -142,12 +142,8 @@ INSERT INTO `produit` (`id_produit`, `reference`, `categorie`, `titre`, `descrip
 (5, '31-p-33', 'tshirt', 'Tshirt noir original', 'voici un tshirt noir tr&egrave;s original :p', 'noir', 'XL', 'm', 'photo/31-p-33_noir.jpg', 25, 80),
 (6, '56-a-65', 'chemise', 'Chemise Blanche', 'Les chemises c''est bien mieux que les tshirts', 'blanc', 'L', 'm', 'photo/56-a-65_chemiseblanchem.jpg', 49, 73),
 (7, '63-s-63', 'chemise', 'Chemise Noir', 'Comme vous pouvez le voir c''est une chemise noir...', 'noir', 'M', 'm', 'photo/63-s-63_chemisenoirm.jpg', 59, 120),
-(8, '77-p-79', 'pull', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99),
-(9, '77-l-79', 'pull', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99),
-(10, '56-a-67', 'chemise', 'Chemise Blanche', 'Les chemises c''est bien mieux que les tshirts', 'blanc', 'L', 'm', 'photo/56-a-65_chemiseblanchem.jpg', 49, 73),
-(11, '63-s-64', 'chemise', 'Chemise Noir', 'Comme vous pouvez le voir c''est une chemise noir...', 'noir', 'M', 'm', 'photo/63-s-63_chemisenoirm.jpg', 59, 120),
-(12, '77-p-72', 'pull', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99),
-(13, '77-l-71', 'pull', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99);
+(8, '77-p-79', 'pull', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99);
+
 
 -- --------------------------------------------------------
 
