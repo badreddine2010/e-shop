@@ -33,7 +33,7 @@ if(!empty($_POST))
 		$nom_photo = $_FILES['photo']['name'];
 		$photo_bdd = "photo/$nom_photo";
 		
-		$photo_dossier = $_SERVER['DOCUMENT_ROOT'] ."/e_shop/photo/$nom_photo"; 
+		$photo_dossier = $_SERVER['DOCUMENT_ROOT'] ."/e-shop/photo/$nom_photo"; 
 		copy($_FILES['photo']['tmp_name'],$photo_dossier);
 	}
 	foreach($_POST as $indice => $valeur)

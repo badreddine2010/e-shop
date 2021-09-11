@@ -136,13 +136,13 @@ CREATE TABLE IF NOT EXISTS `produit` (
 
 INSERT INTO `produit` (`id_produit`, `reference`, `categorie`, `titre`, `description`, `couleur`, `taille`, `public`, `photo`, `prix`, `stock`) VALUES
 (1, '11-d-23', 'tshirt', 'Tshirt Col V bleu pétrole', 'Tee-shirt en coton flammé liseré contrastant', 'bleu', 'M', 'm', 'photo/bleu.jpg', 20, 53),
-(2, '66-f-15', 'tshirt', 'Tshirt Col V rouge', 'c''est vraiment un super tshirt en soir&eacute;e !', 'rouge', 'L', 'm','photo/66-f-15_rouge.png', 15, 230),
-(3, '88-g-77', 'tshirt', 'Tshirt Col rond vert', 'Il vous faut ce tshirt Made In France !!!', 'vert', 'L', 'm', 'photo/88-g-77_vert.png', 29, 63),
-(4, '55-b-38', 'tshirt', 'Tshirt jaune électrique', 'le jaune reviens &agrave; la mode, non? :-)', 'jaune', 'S', 'm', 'photo/55-b-38_jaune.png', 20, 3),
-(5, '31-p-33', 'tshirt', 'Tshirt noir original', 'voici un tshirt noir tr&egrave;s original :p', 'noir', 'XL', 'm', 'photo/31-p-33_noir.jpg', 25, 80),
-(6, '56-a-65', 'chemise', 'Chemise Blanche', 'Les chemises c''est bien mieux que les tshirts', 'blanc', 'L', 'm', 'photo/56-a-65_chemiseblanchem.jpg', 49, 73),
-(7, '63-s-63', 'chemise', 'Chemise Noir', 'Comme vous pouvez le voir c''est une chemise noir...', 'noir', 'M', 'm', 'photo/63-s-63_chemisenoirm.jpg', 59, 120),
-(8, '77-p-79', 'pull', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/77-p-79_pullgrism2.jpg', 79, 99);
+(2, '66-f-15', 'tshirt', 'Tshirt Col V rouge', 'c''est vraiment un super tshirt en soir&eacute;e !', 'rouge', 'L', 'm','photo/rouge.jpg', 15, 230),
+(3, '88-g-77', 'tshirt', 'Tshirt Col rond vert', 'Il vous faut ce tshirt Made In France !!!', 'vert', 'L', 'm', 'photo/vert.jpg', 29, 63),
+(4, '55-b-38', 'tshirt', 'Tshirt jaune électrique', 'le jaune reviens &agrave; la mode, non? :-)', 'jaune', 'S', 'm', 'photo/jaune.jpg', 20, 3),
+(5, '31-p-33', 'tshirt', 'Tshirt noir original', 'voici un tshirt noir tr&egrave;s original :p', 'noir', 'XL', 'm', 'photo/noir.jpg', 25, 80),
+(6, '56-a-65', 'chemise', 'Chemise Blanche', 'Les chemises c''est bien mieux que les tshirts', 'blanc', 'L', 'm', 'photo/chemiseblanchem.jpg', 49, 73),
+(7, '63-s-63', 'chemise', 'Chemise Noir', 'Comme vous pouvez le voir c''est une chemise noir...', 'noir', 'M', 'm', 'photo/chemisenoirem.jpg', 59, 120),
+(8, '77-p-79', 'pull', 'Pull gris', 'Pull gris pour l''hiver', 'gris', 'XL', 'f', 'photo/pullgrism.jpg', 79, 99);
 
 
 -- --------------------------------------------------------
